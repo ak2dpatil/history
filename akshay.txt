@@ -1,0 +1,238 @@
+    1  sudo yum install -y yum-utils \  device-mapper-persistent-data \ lvm2sudo yum install -y yum-utils \  device-mapper-persistent-data \ lvm2sudo yum install -y yum-utils \  device-mapper-persistent-data \ lvm2
+    2  sudo yum install -y yum-utils \  device-mapper-persistent-data \ lvm2
+    3  sudo yum install -y yum-utils
+    4  sudo yum install lvm2
+    5  sudo yum install device-mapper-persistent-data
+    6  sudo yum-config-manager
+    7  sudo --add-repo
+    8  --add-repo \ https://download.docker.com/linux/centos/docker-ce.repo
+    9  add-repo https://download.docker.com/linux/centos/docker-ce.repo
+   10  yum install wget
+   11  sudo wget  https://download.docker.com/linux/centos/docker-ce.repo
+   12  yum install docker
+   13  docker version
+   14  systmctl start docker
+   15  systemctl start docker
+   16  docker version
+   17  service docker status
+   18  docker images
+   19  docker run -it centos 
+   20  docker image
+   21  docker images
+   22  docker attach e934aafc2206
+   23  ifconfig
+   24  docker run -it e934aafc2206
+   25  docker -terr
+   26  docker -tree
+   27  docker image -tree
+   28  docker images -tree
+   29  docker history
+   30  docker history e934aafc2206
+   31  docker images
+   32  docker run e934aafc2206
+   33  docker images
+   34  dock3er start e934aafc2206
+   35  docker start e934aafc2206
+   36  docker --he;p
+   37  docker --help
+   38  docker container
+   39  docker container describe
+   40  docker container --help
+   41  docker container list
+   42  docker attach f42ba05e67b4
+   43  docker container list
+   44  docker images
+   45  docker run -it e934aafc2206
+   46  docker container list
+   47  docker attach 7c3de3f31b47
+   48  docker container list
+   49  docker run e934aafc2206
+   50  docker container list
+   51  docker stop e934aafc2206
+   52  docker -it e934aafc2206
+   53  docker run -it e934aafc2206
+   54  docker container list
+   55  history
+   56  docker immages
+   57  docker images
+   58  docker run -it httpd
+   59  docker container list
+   60  docker images
+   61  docker run -it  805130e51ae9
+   62  docker continer list
+   63  docker container list
+   64  docker rm  805130e51ae9
+   65  docker rm  image 805130e51ae9
+   66  docker images
+   67  docker rmi httpd
+   68  docker stop 1ba29e76b0a0
+   69  docker container lists
+   70  docker container list
+   71  docker images
+   72  docker rmi httpd
+   73  docker rmi centos
+   74  docker container list
+   75  docker stop 308c7baa137d 
+   76  docker container list
+   77  docker rmi centos
+   78  docker rmi -f centos
+   79  docker images
+   80  docker rmi -f httpd
+   81  docker images
+   82  docker container list
+   83  docker pull centos
+   84  ls
+   85  docker images
+   86  docker pull httpd
+   87  docker images
+   88  docker container list
+   89  docker run -it httpd
+   90  docker container list
+   91  docker attach eb12a07e2869
+   92  docker container list
+   93  docker attach c38621654f16
+   94  docker run -it centos
+   95  docker run centos
+   96  docker container list
+   97  docker run -it centos
+   98  docker container list
+   99  docker run -it centos
+  100  docker container list
+  101  docker attach 2c0d50dd2da7
+  102  docker container list
+  103  docker stopm 2c0d50dd2da7
+  104  docker stop 2c0d50dd2da7
+  105  docker container list
+  106  docker ps -a
+  107  docker commit 2c0d50dd2da7  newimage
+  108  docker images
+  109  docker ps
+  110  docker ps -a
+  111  docker rm 2c0d50dd2da7 
+  112  docker ps -a
+  113  docker rm 4bd92ca7c800 
+  114  docker rm e23bcd786b22
+  115  docker rm f42ba05e67b4 
+  116  docker ps -a
+  117  docker rm 7c3de3f31b47 0f3b49beff87
+  118  docker ps -a
+  119  docker rm 308c7baa137d 1ba29e76b0a0 4e12470fb72c ffba828521fc        centos              "/bin/bash"          18 minutes ago      Exited (0) 18 minutes ago                         sharp_feynman
+  120  docker rm 308c7baa137d 1ba29e76b0a0 4e12470fb72c ffba828521fc 
+  121  docker ps -a
+  122  docker rm c38621654f16
+  123  docker rm 8f36fa631613
+  124  docker ps -a
+  125  docker container list
+  126  docker images 
+  127  docker history newimage
+  128  mkdir /tmp/akshay_share
+  129  docker save -o /tmp/akshay_share/ newimage
+  130  cd /tmp/akshay_share/
+  131  ls
+  132  ls -al
+  133  mkdir /mnt/akshaysha
+  134  docker save -o /mnt/akshaysha/ newimage
+  135  clear
+  136  docker images
+  137  docker pa -a
+  138  clear
+  139  docker ps -a
+  140  docker stop eb12a07e2869
+  141  docker ps -a
+  142  docker commit  eb12a07e2869 new1.1
+  143  docker images
+  144  docker save -o . new1.1
+  145  docker save -o new1.1.tar
+  146  docker save new1.1.tar
+  147  docker save -o /mnt new1.1.tar
+  148  docker save -o /mnt new1.1
+  149  psd
+  150  pwd
+  151  cd /mnt/
+  152  ls
+  153  cd akshaysha/
+  154  ls
+  155  ls -al
+  156  docker top
+  157  docker ps -a
+  158  service docker start
+  159  docker images
+  160  docker ps -a
+  161  docker start eb12a07e2869
+  162  docker ps -a
+  163  docker top
+  164  docker top eb12a07e2869
+  165  docker images
+  166  docker tag c01896f6e4e5 ak2dpatil/newimage:1.1.0
+  167  docker login
+  168  docker push ak2dpatil/newimage:1.1.0
+  169  docker tag c01896f6e4e5 ak2dpatil/dockertest:newimage
+  170  docker push ak2dpatil/dockertest:newimage
+  171  mkdir /testvolume
+  172  docker run –it –v /test-volume -–name=volcontainer newimage
+  173  docker run –it –v /test-volume -–name=volcontainer newimage /bin/bash
+  174  docker run –it –v /testvolume centos /bin/bash
+  175  docker run –v /testvolume centos /bin/bash
+  176  mkdir test
+  177  cd test
+  178  vim Dockerfile
+  179  docker build
+  180  docker build -t hhhh:1.0.2
+  181  docker build -t centos:1.0.2
+  182  docker build -t="centos"
+  183  docker build -t centos:12
+  184  docker build -t centos
+  185  docker build -f /test
+  186  docker build -t centos .
+  187  docker container lists
+  188  docker container list
+  189  docker images
+  190  vim Dockerfile 
+  191  docker stop eb12a07e2869
+  192  docker container list
+  193  docker run -p 80:80 centos
+  194  docker ps -a
+  195  docker attach 2ddddf7c6fe2
+  196  docker start 2ddddf7c6fe2
+  197  docker attach 2ddddf7c6fe2
+  198  vim Dockerfile 
+  199  history
+  200  vim Dockerfile 
+  201  docker images
+  202  clear
+  203  docker images
+  204  vim Dockerfile 
+  205  docker build -t abc:1.1
+  206  docker build -t abc:1.1 .
+  207  docker images
+  208  docker rmi abc
+  209  docker rmi abc:1.1
+  210  docker rmi centos
+  211  docker rmi new1.1
+  212  docker rmi ak2dpatil/dokertest:newimage
+  213  docker rmi ak2dpatil/dokertest
+  214  docker rmi newimage
+  215  docker images
+  216  docker container list
+  217  docker ps -a
+  218  docker rm 2ddddf7c6fe2
+  219  docker rm eb12a07e2869
+  220  docker ps -a
+  221  docker images
+  222  docker rmi centos
+  223  docker images
+  224  docker rmi c01896f6e4e5
+  225  docker rmi -f  c01896f6e4e5
+  226  docker images
+  227  docker run centos
+  228  docker container list
+  229  docker ps -a
+  230  docker run -it centos
+  231  docker build -t centos abc:1.1
+  232  docker ps -a
+  233  docker commit e7afa1dc8b5b asdf
+  234  docker images
+  235  docker inspect e7afa1dc8b5b
+  236  iptables -L -v
+  237  iptables -L
+  238  history > akshay.txt
